@@ -4,10 +4,8 @@ NUMBER OF EDGES: 190
 NUMBER OF REQUIRED_EDGES: 63
 NUMBER OF NON_REQUIRED_EDGES: 127
 VEHICLE CAPACITY: 206
-NUMBER OF VEHICLES: 10
 RECHARGE TIME: 412
 LIST_REQUIRED_EDGES:
-DEPOT: 11,20,34,35,48,69,101,108,122,124
 (8,11) edge weight 48.0
 (37,43) edge weight 16.0
 (82,83) edge weight 10.0
@@ -205,3 +203,5 @@ Vehicle 28 will fail in 174 time units.
 Vehicle 8 will fail in 62 time units.
 Vehicle 1 will fail in 71 time units.
 Vehicle 17 will fail in 113 time units.
+NUMBER OF VEHICLES: 10
+DEPOT: 11,20,34,35,48,69,101,108,122,124

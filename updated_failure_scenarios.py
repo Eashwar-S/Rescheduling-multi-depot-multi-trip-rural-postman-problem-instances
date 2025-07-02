@@ -128,7 +128,7 @@ def update_all_instances():
                 continue
 
             # parse and compute new depots
-            G, battery_capacity = parse_text_file(infile)
+            G, _ , battery_capacity = parse_text_file(infile)
             new_depots = select_depots(G, battery_capacity)
             num_vehicles = len(new_depots)
 
@@ -150,19 +150,20 @@ def update_all_instances():
                 (i for i, l in enumerate(filtered) if l.strip().startswith('VEHICLE CAPACITY')),
                 None
             )
-            if vc_idx is not None:
-                filtered.insert(vc_idx + 1, vehicle_line)
-            else:
-                # fallback to top
-                filtered.insert(0, vehicle_line)
+            # if vc_idx is not None:
+            #     filtered.insert(vc_idx + 1, vehicle_line)
+            # else:
+            #     # fallback to top
+            #     filtered.insert(0, vehicle_line)
 
             # find where to insert DEPOT line (before first edge line)
             edge_idx = next(
                 (i for i, l in enumerate(filtered) if l.strip().startswith('(')),
                 len(filtered)
             )
-            filtered.insert(edge_idx, depot_line)
-
+            # filtered.insert(edge_idx, depot_line)
+            filtered.append(vehicle_line)
+            filtered.append(depot_line)
             # write out updated file
             outfile = os.path.join(out_folder, f"{inst}.{scenario}.txt")
             with open(outfile, 'w') as f:
@@ -214,7 +215,7 @@ def main():
         print("Invalid scenario number.")
 
 
-    folder = f"Failure_Scenarios/{instance_name}_failure_scenarios"
+    folder = f"Balanced_Failure_Scenarios/{instance_name}_failure_scenarios_third"
     file_path = os.path.join(folder, f"{instance_name}.{scenario_number}.txt")
     if not os.path.exists(file_path):
         print(f"[!] File not found: {file_path}")
@@ -229,7 +230,7 @@ def main():
         f"Scenario {instance_name}.{scenario_number} — Random Depot Placement - ({len(original_depots)} depots)"
     )
 
-    folder = f"Updated_Failure_Scenarios/{instance_name}_failure_scenarios"
+    folder = f"Balanced_Failure_Scenarios/{instance_name}_failure_scenarios_fourth"
     file_path = os.path.join(folder, f"{instance_name}.{scenario_number}.txt")
     if not os.path.exists(file_path):
         print(f"[!] File not found: {file_path}")
