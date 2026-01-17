@@ -1,12 +1,13 @@
 NAME: eglese.108
 NUMBER OF VERTICES: 140
 NUMBER OF EDGES: 190
-NUMBER OF REQUIRED_EDGES: 63
-NUMBER OF NON_REQUIRED_EDGES: 127
-NUMBER OF VEHICLES: 31
+NUMBER OF REQUIRED_EDGES: 95
+NUMBER OF NON_REQUIRED_EDGES: 95
 VEHICLE CAPACITY: 206
+NUMBER OF VEHICLES: 9
 RECHARGE TIME: 412
 LIST_REQUIRED_EDGES:
+DEPOT: 11,23,41,52,71,102,109,122,127
 (20,24) edge weight 33.0
 (66,67) edge weight 33.0
 (140,54) edge weight 18.0
@@ -70,7 +71,6 @@ LIST_REQUIRED_EDGES:
 (48,49) edge weight 10.0
 (49,140) edge weight 24.0
 (35,37) edge weight 17.0
-LIST_NON_REQUIRED_EDGES:
 (5,6) edge weight 26.0
 (8,11) edge weight 48.0
 (10,15) edge weight 13.0
@@ -103,6 +103,7 @@ LIST_NON_REQUIRED_EDGES:
 (47,42) edge weight 4.0
 (42,43) edge weight 5.0
 (43,46) edge weight 5.0
+LIST_NON_REQUIRED_EDGES:
 (44,45) edge weight 14.0
 (46,77) edge weight 16.0
 (48,50) edge weight 8.0
@@ -199,5 +200,7 @@ LIST_NON_REQUIRED_EDGES:
 (136,137) edge weight 29.0
 (136,138) edge weight 5.0
 FAILURE_SCENARIO:
-Vehicle 19 will fail in 122 time units.
-DEPOT: 1, 6, 11, 16, 21, 26, 31, 37, 42, 47, 52, 57, 62, 67, 73, 78, 83, 88, 93, 98, 103, 109, 114, 119, 124, 129, 134, 140
+Vehicle 4 will fail in 892 time units.
+Vehicle 9 will fail in 1010 time units.
+Vehicle 5 will fail in 341 time units.
+Vehicle 6 will fail in 115 time units.

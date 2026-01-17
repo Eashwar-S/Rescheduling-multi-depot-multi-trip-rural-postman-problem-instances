@@ -1,12 +1,13 @@
 NAME: bccm.30
 NUMBER OF VERTICES: 30
 NUMBER OF EDGES: 63
-NUMBER OF REQUIRED_EDGES: 20
-NUMBER OF NON_REQUIRED_EDGES: 43
-NUMBER OF VEHICLES: 10
+NUMBER OF REQUIRED_EDGES: 32
+NUMBER OF NON_REQUIRED_EDGES: 31
 VEHICLE CAPACITY: 20
+NUMBER OF VEHICLES: 8
 RECHARGE TIME: 40
 LIST_REQUIRED_EDGES:
+DEPOT: 2,4,8,14,16,18,25,27
 (13,16) edge weight 8.0
 (1,8) edge weight 7.0
 (12,16) edge weight 6.0
@@ -27,7 +28,6 @@ LIST_REQUIRED_EDGES:
 (18,26) edge weight 9.0
 (4,7) edge weight 1.0
 (6,11) edge weight 7.0
-LIST_NON_REQUIRED_EDGES:
 (1,5) edge weight 3.0
 (1,9) edge weight 10.0
 (2,3) edge weight 3.0
@@ -40,6 +40,7 @@ LIST_NON_REQUIRED_EDGES:
 (9,10) edge weight 3.0
 (3,10) edge weight 6.0
 (10,15) edge weight 5.0
+LIST_NON_REQUIRED_EDGES:
 (10,19) edge weight 10.0
 (6,7) edge weight 3.0
 (11,12) edge weight 5.0
@@ -72,5 +73,6 @@ LIST_NON_REQUIRED_EDGES:
 (29,25) edge weight 3.0
 (29,30) edge weight 6.0
 FAILURE_SCENARIO:
-Vehicle 4 will fail in 10 time units.
-DEPOT: 1, 6, 12, 18, 24, 30
+Vehicle 3 will fail in 32 time units.
+Vehicle 5 will fail in 20 time units.
+Vehicle 8 will fail in 8 time units.
