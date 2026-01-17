@@ -1,4 +1,4 @@
-# Rescheduling-multi-depot-multi-trip-rural-postman-problem-instances
+# MD-RPP-RRV_with_vehicle_failures_instances
 This repository contains failure scenarios to test algorithms developed to handle multiple vehicle failures in multi-depot rural postman problem with rechargeable and reusable vehicles capable of performing multiple trips 
 
 ## Capacitated Arc Routing Problem (CARP) Instances:
